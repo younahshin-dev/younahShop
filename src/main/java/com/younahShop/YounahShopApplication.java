@@ -1,13 +1,13 @@
-package com.younahShop.springboot;
+package com.younahShop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class YounahShop2Application {
+public class YounahShopApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(YounahShop2Application.class, args);
+		SpringApplication.run(YounahShopApplication.class, args);
 	}
 
 }
