@@ -1,4 +1,4 @@
-package com.younahShop.order;
+package com.younahShop.dao;
 
 public class OrderRepository {
 

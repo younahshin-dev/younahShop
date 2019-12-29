@@ -1,4 +1,4 @@
-package com.younahShop.goods;
+package com.younahShop.dao;
 
 public class GoodsRepository {
 
