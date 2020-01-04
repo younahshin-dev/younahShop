@@ -11,10 +11,10 @@ import com.younahShop.service.GoodsService;
 @Controller
 public class GoodsController {
 	
-	@RequestMapping(method = RequestMethod.POST, value="/")
-	public String goodsList() {
-		String param="";
-		ArrayList goodsList = GoodsService.getGoodsList(param);
-		return "main"; //main.jsp 호출
-	}
+//	@RequestMapping(value="/")
+//	public String goodsList() {
+//		String param="";
+//		ArrayList goodsList = GoodsService.getGoodsList(param);
+//		return "themeleaf/index"; //main.jsp 호출
+//	}
 }
