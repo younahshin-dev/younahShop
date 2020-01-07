@@ -13,23 +13,23 @@ public class WebConfig extends WebMvcConfigurationSupport {
 
 	    @Override
 	    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-	    	 registry.addResourceHandler("/rss/**").addResourceLocations("/rss/");
-//	        registry.addResourceHandler(
-//	                "/rss/css/**",
-//	                "/rss/fonts/**",
-//	                "/rss/images/**",
-//	                "/rss/js/**",
-//	                "/rss/lib/**",
-//	                "/rss/php/**",
-//	                "/rss/webfonts/**")
-//	                .addResourceLocations(
-//	                        "/css/",    
-//	                        "/fonts/",  
-//	                        "/images/", 
-//	                        "/js/",     
-//	                        "/lib/",    
-//	                        "/php/",    
-//	                        "/webfonts/");
+//	    	 registry.addResourceHandler("/rss/**").addResourceLocations("/rss/");
+	        registry.addResourceHandler(
+	                "/css/**",
+	                "/fonts/**",
+	                "/images/**",
+	                "/js/**",
+	                "/lib/**",
+	                "/php/**",
+	                "/webfonts/**")
+	                .addResourceLocations(
+	                        "/rss/css/",    
+	                        "/rss/fonts/",  
+	                        "/rss/images/", 
+	                        "/rss/js/",     
+	                        "/rss/lib/",    
+	                        "/rss/php/",    
+	                        "/rss/webfonts/");
 	    }
 
 }
