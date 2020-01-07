@@ -11,6 +11,7 @@ public class GoodsService {
 
 	@RequestMapping
 	public static ArrayList getGoodsList(String param) {
+		
 		return null;
 		
 	}
