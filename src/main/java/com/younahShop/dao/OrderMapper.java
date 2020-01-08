@@ -1,5 +1,5 @@
 package com.younahShop.dao;
 
-public class OrderRepository {
+public class OrderMapper {
 
 }
