@@ -5,7 +5,7 @@
 <configuration>
 	<!-- 매핑정보 추가 -->
 	<mappers>
-		<package name="com.younahShop.dao"/>
-<!-- 		<mapper resource="mapper/*Mapper.xml" /> -->
+		<package name="com.younahShop.dao.*"/>
+<!-- 		<mapper resource="classpath*:**/mapper/*.xml" /> -->
 	</mappers>
 </configuration>

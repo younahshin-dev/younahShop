@@ -1,20 +1,35 @@
 package com.younahShop.dao;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.cursor.Cursor;
+import org.apache.ibatis.executor.BatchResult;
+import org.apache.ibatis.session.Configuration;
+import org.apache.ibatis.session.ResultHandler;
+import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Repository;
 
+import com.younahShop.model.Goods;
+
 @Mapper
+@Repository
 public class GoodsMapper implements YounahMapper {
 
-	@Autowired
 	private SqlSession sqlSession;
 
+	public void setSqlSession(SqlSession sqlSession) {
+		this.sqlSession = sqlSession;
+	}
+	  
 	@Override
 	public List selectOne(long id) {
 		// TODO Auto-generated method stub
@@ -23,7 +38,7 @@ public class GoodsMapper implements YounahMapper {
 
 	@Override
 	public List findAll() {
-		List resultList= (ArrayList)sqlSession.selectList("goodsMapper.selectGoodsList", "");
+		List resultList= (ArrayList)sqlSession.selectOne("com.younahShop.dao.GoodsMapper.selectGoodsList");
 		return resultList;
 	}
 
