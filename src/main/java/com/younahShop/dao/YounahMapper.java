@@ -9,12 +9,9 @@ import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
 @Mapper
-@Repository
 public interface YounahMapper<T> {
 
-    List<T> selectOne(long id);
-
-    List<T> findAll();
-
-    void insert(T object);
+	int selectBoardListCnt() throws Exception;
+	
+	List<T> selectBoardList() throws Exception;
 }
