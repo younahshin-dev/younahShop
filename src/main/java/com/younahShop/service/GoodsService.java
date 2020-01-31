@@ -18,7 +18,8 @@ public class GoodsService {
 	
 	public static List getGoodsList(String param) {
 		 System.out.println("진입");
-		List resultList = goodsMapper.selectGoodsList();
+		Object obj = new Object();
+		List resultList = goodsMapper.selectGoodsList(obj);
 		return resultList;
 		
 	}
