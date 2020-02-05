@@ -9,5 +9,7 @@ public interface YounahMapper<T> {
 
 	int selectGoodsListCnt() throws Exception;
 	
-	List<T> selectGoodsList(String qId, T obj) throws Exception;
+//	List<T> selectGoodsList(String qId, T obj) throws Exception;
+
+	List selectGoodsList(String qId, Object obj) throws Exception;
 }
