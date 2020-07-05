@@ -31,19 +31,19 @@ public class YounahShopApplication {
 //        return "themeleaf/index";
 //    }
     
-    @RequestMapping("/index")
-    public ModelAndView index () {
-        ModelAndView modelAndView = new ModelAndView();
-        
-        String param = "";
-        // 로직 수행 
-        ArrayList resultList = (ArrayList) GoodsService.getGoodsList(param);
-        modelAndView.addObject("GoodsList", resultList);
-        
-        
-        modelAndView.setViewName("themeleaf/index");
-        return modelAndView;
-    }
+//    @RequestMapping("/index")
+//    public ModelAndView index () {
+//        ModelAndView modelAndView = new ModelAndView();
+//        
+//        String param = "";
+//        // 로직 수행 
+//        ArrayList resultList = (ArrayList) GoodsService.getGoodsList(param);
+//        modelAndView.addObject("GoodsList", resultList);
+//        
+//        
+//        modelAndView.setViewName("themeleaf/index");
+//        return modelAndView;
+//    }
 
 	public static void main(String[] args) {
 		SpringApplication.run(YounahShopApplication.class, args);
